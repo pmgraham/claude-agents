@@ -1,0 +1,1 @@
+- Always use the project manager agent for tasks and always use the git-workflow agent for git tasks.
