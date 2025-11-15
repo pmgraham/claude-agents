@@ -6,6 +6,32 @@ A collection of specialized agent definitions for Claude Code to enhance develop
 
 This repository contains custom agent definitions that provide specialized capabilities for various development tasks. Each agent is designed to handle specific aspects of software development with expertise and best practices.
 
+## Learn More
+
+For detailed information on creating and configuring agents in Claude Code, see the [official Claude Code subagents documentation](https://code.claude.com/docs/en/sub-agents#using-the-agents-command-recommended).
+
+# Claude Agents Setup
+
+## Installation
+
+To use these agents in Claude Code, copy the agent files to your Claude Code configuration directory:
+
+```bash
+# Create the agents directory if it doesn't exist
+mkdir -p ~/.claude/agents
+
+# Copy all agents to your Claude Code directory
+cp agents/*.md ~/.claude/agents/
+```
+
+Alternatively, you can symlink individual agents:
+
+```bash
+# Symlink specific agents
+ln -s /path/to/claude-agents/agents/git-workflow-manager.md ~/.claude/agents/
+ln -s /path/to/claude-agents/agents/project-tracker.md ~/.claude/agents/
+```
+
 ## Available Agents
 
 ### Git Workflow Manager
@@ -38,8 +64,4 @@ The `CLAUDE.md` file in this repository provides instructions for using these ag
 
 ## License
 
-[Add your license information here]
-
-## Contributing
-
-[Add contribution guidelines here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
