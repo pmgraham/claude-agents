@@ -38,10 +38,6 @@ ln -s /path/to/claude-agents/agents/project-tracker.md ~/.claude/agents/
 - **Location**: `agents/git-workflow-manager.md`
 - **Purpose**: Manages git operations with intelligent commit message generation, automated push workflows, and best practices enforcement.
 
-### GitHub Manager
-- **Location**: `agents/github-manager.md`
-- **Purpose**: Handles GitHub-specific operations including repository management, pull requests, issues, and collaboration workflows.
-
 ### Project Tracker
 - **Location**: `agents/project-tracker.md`
 - **Purpose**: Manages project tasks, tracks progress, and organizes development workflows.
