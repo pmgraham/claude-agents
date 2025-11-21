@@ -50,6 +50,22 @@ ln -s /path/to/claude-agents/agents/project-tracker.md ~/.claude/agents/
 - **Location**: `agents/python-expert-code-reviewer.md`
 - **Purpose**: Provides expert-level code reviews for Python projects with focus on best practices, performance, and security.
 
+### Data Modeling Architect
+- **Location**: `agents/data-modeling-architect.md`
+- **Purpose**: Designs, reviews, and optimizes data models across multiple database paradigms including relational, NoSQL, graph databases, and vector embeddings for AI search.
+
+### DevOps Analyst
+- **Location**: `agents/devops-analyst.md`
+- **Purpose**: Reviews and validates DevOps configurations including Docker/Docker Compose files, CI/CD pipelines, deployment configurations, and infrastructure-as-code.
+
+### Session Opener
+- **Location**: `agents/session-opener.md`
+- **Purpose**: Establishes context at the start of work sessions by reviewing previous session documentation and determining today's priorities.
+
+### Session Closer
+- **Location**: `agents/session-closer.md`
+- **Purpose**: Closes out work sessions by tidying git workflow, logging untracked issues to GitHub, and persisting session context for continuity.
+
 ## Usage
 
 These agents are designed to be used with Claude Code. Reference them in your CLAUDE.md file or invoke them directly when needed for specific development tasks.
