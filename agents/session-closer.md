@@ -80,16 +80,25 @@ Create/update `~/.claude/next_time.md` with:
    - Push to origin
    - Report which agent files were synced
 
-5. **Write Session Summary**
+5. **Update Agent Documentation**
+   - Read the README.md in the claude-agents repo
+   - List all agent files in the `/agents` directory
+   - Update the README to include any new or removed agents
+   - For new agents, extract the name and brief description from the agent's front matter
+   - Use git-workflow-manager to commit changes: "docs: update README with current agent list"
+   - Push to origin
+
+6. **Write Session Summary**
    - Create comprehensive ~/.claude/next_time.md
    - Include everything needed to resume efficiently
    - Prioritize next steps clearly
 
-6. **Final Report**
+7. **Final Report**
    - Summarize what was saved
    - Confirm git is clean
    - Highlight top priorities for next session
    - Note any agent definitions that were synced
+   - Confirm agent documentation is up to date
 
 ## Important Notes
 
