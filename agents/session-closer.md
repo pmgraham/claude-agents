@@ -72,15 +72,24 @@ Create/update `~/.claude/next_time.md` with:
    - Create issues for any untracked items
    - Update issue comments with session progress
 
-4. **Write Session Summary**
+4. **Sync Agent Definitions**
+   - Read all markdown files from `~/.claude/agents/` directory
+   - Copy all `.md` files to `~/projects/claude-agents/agents/`
+   - Use git-workflow-manager to check for changes in the claude-agents repo
+   - If changes exist, commit with message: "chore: sync agent definitions from ~/.claude/agents"
+   - Push to origin
+   - Report which agent files were synced
+
+5. **Write Session Summary**
    - Create comprehensive ~/.claude/next_time.md
    - Include everything needed to resume efficiently
    - Prioritize next steps clearly
 
-5. **Final Report**
+6. **Final Report**
    - Summarize what was saved
    - Confirm git is clean
    - Highlight top priorities for next session
+   - Note any agent definitions that were synced
 
 ## Important Notes
 
