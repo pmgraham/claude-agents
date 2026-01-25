@@ -21,6 +21,9 @@
 ### Naming Conventions
 - **Table names**: plural, all lowercase, snake_case (e.g., `stop_words`, `user_accounts`)
 - **Column names**: all lowercase, snake_case (e.g., `created_at`, `user_id`)
+- **Date columns**: use `_on` suffix (e.g., `created_on`, `updated_on`, `sold_on`)
+- **Datetime columns**: use `_at` suffix (e.g., `created_at`, `updated_at`, `sold_at`)
+- **Boolean columns**: use `is_` prefix (e.g., `is_included`, `is_holiday`, `is_excluded`)
 - When in doubt, opt for **clarity over brevity**
 
 ### Data Integrity
