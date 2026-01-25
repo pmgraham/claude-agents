@@ -9,12 +9,14 @@ This skill syncs Claude Code configuration between local (~/.claude/) and the Gi
 
 ## Push (local -> GitHub)
 When pushing, copy these files to the repo and commit/push:
-1. ~/.claude/CLAUDE.md -> ~/projects/claude-agents/CLAUDE.md
-2. ~/.claude/skills/* -> ~/projects/claude-agents/skills/
-3. ~/.claude/agents/* -> ~/projects/claude-agents/agents/
+1. ~/.claude/settings.json -> ~/projects/claude-agents/settings.json
+2. ~/.claude/CLAUDE.md -> ~/projects/claude-agents/CLAUDE.md
+3. ~/.claude/skills/* -> ~/projects/claude-agents/skills/
+4. ~/.claude/agents/* -> ~/projects/claude-agents/agents/
 
 ```bash
 # Copy files
+cp ~/.claude/settings.json ~/projects/claude-agents/
 cp ~/.claude/CLAUDE.md ~/projects/claude-agents/
 cp -r ~/.claude/skills/* ~/projects/claude-agents/skills/
 cp -r ~/.claude/agents/* ~/projects/claude-agents/agents/ 2>/dev/null || true
@@ -38,6 +40,7 @@ git pull origin main || git pull origin master
 mkdir -p ~/.claude/skills ~/.claude/agents
 
 # Copy files
+cp ~/projects/claude-agents/settings.json ~/.claude/settings.json
 cp ~/projects/claude-agents/CLAUDE.md ~/.claude/CLAUDE.md
 cp -r ~/projects/claude-agents/skills/* ~/.claude/skills/
 cp -r ~/projects/claude-agents/agents/* ~/.claude/agents/ 2>/dev/null || true

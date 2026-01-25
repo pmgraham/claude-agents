@@ -1,0 +1,16 @@
+{
+  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd ~/projects/claude-agents && git pull --quiet origin main 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
