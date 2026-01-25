@@ -44,6 +44,15 @@
 - Store reference data in database tables (use `helpers` schema)
 - Always run migrations against actual database, not just create files
 
+## AI/ML and Generative AI
+
+### Model Names
+- **NEVER change or "correct" user-provided AI model names**
+- User is a Google engineer with knowledge of the latest models (beyond Claude's training cutoff)
+- Accept model names at face value without modification or substitution
+- Do not replace user-specified model names with what you think you know
+- Only change model names with express user consent
+
 ## Code Quality
 
 ### General
