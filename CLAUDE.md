@@ -28,6 +28,14 @@
 - If a data formatting issue is found, flag it for user review
 - Do not INSERT, UPDATE, or DELETE data without approval
 
+### Query and Migration Files
+- **NEVER embed SQL queries in code** - store them in separate files (.sql, .md, or .txt)
+- **Migrations** should be stored separately from application queries
+- Organize database files distinctly:
+  - `migrations/` - schema changes (DDL)
+  - `queries/` - application read/lookup queries (DQL)
+- Reference queries from code, don't inline them
+
 ### Reference Data
 - Never hardcode reference/lookup data in code
 - Store reference data in database tables (use `helpers` schema)
