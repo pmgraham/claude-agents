@@ -1,28 +1,47 @@
 # Global Claude Code Rules
 
-## Git Workflow
+## SDLC (Software Development Lifecycle)
 
-**NEVER merge a PR without explicit user approval.**
+**NEVER make changes directly on main/master branches** (except for documentation/markdown files).
 
-1. Create the PR
-2. Wait for user to test
-3. Wait for explicit "merge it" or similar instruction from user
-4. Only then merge
-
-This rule applies to ALL repositories.
-
-- Feature branches for all changes
-- Clear commit messages
+1. Create a feature branch, bugfix branch, or whatever is appropriate
+2. Make changes on the branch
+3. Push to GitHub
+4. Create a PR
+5. Flag user when ready for review
+6. Wait for explicit approval before merging
 
 ## Database Standards
 
+### Schema Changes
+- **NEVER make schema changes without express user consent**
+- Explain what changes are being made and why before proceeding
+- Wait for approval before executing any DDL (CREATE, ALTER, DROP)
+
+### Naming Conventions
+- **Table names**: plural, all lowercase, snake_case (e.g., `stop_words`, `user_accounts`)
+- **Column names**: all lowercase, snake_case (e.g., `created_at`, `user_id`)
+- When in doubt, opt for **clarity over brevity**
+
+### Data Integrity
+- **NEVER alter data without express user consent**
+- If a data formatting issue is found, flag it for user review
+- Do not INSERT, UPDATE, or DELETE data without approval
+
+### Reference Data
 - Never hardcode reference/lookup data in code
 - Store reference data in database tables (use `helpers` schema)
-- No abbreviations in schema/table/column names
 - Always run migrations against actual database, not just create files
 
 ## Code Quality
 
+### General
 - No unnecessary abbreviations - prefer readable names
 - Clean, organized project structure
 - Remove dead code (don't comment it out)
+
+### Python
+- Follow **PEP8** coding standards
+
+### Golang (API Web Services)
+- Follow the **MVC pattern** (Models, Views/Handlers, Controllers/Services)
