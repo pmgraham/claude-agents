@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd ~/projects/claude-agents && git pull --quiet origin main 2>/dev/null || true"
+            "command": "cd ~/projects/claude-agents && git pull --quiet origin main && cp CLAUDE.md ~/.claude/CLAUDE.md 2>/dev/null || true"
           }
         ]
       }
